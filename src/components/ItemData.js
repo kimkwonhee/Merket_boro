@@ -23,6 +23,10 @@ const ItemBox = styled.div`
 const ItemTitle = styled.div`
     padding: 10px 0px;
     font-weight: 600;
+
+    @media all and (max-width:1000px) {
+      font-size: 14px;
+    }
 `
 
 

@@ -29,9 +29,17 @@ const MarketTemplat = styled.div`
     margin-right: auto;
     margin-top: 3rem;
     justify-content: space-between;
+
+    @media all and (max-width:1000px) {
+        width : 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 `
 const ItemWrapper = styled.div`
-    width: 48%;
+    width: 47%;
     height: 300px;
     overflow: scroll;
     overflow-x: hidden;
@@ -39,14 +47,32 @@ const ItemWrapper = styled.div`
     text-align: center;
     background: rgb(0,0,0,0.1);
     padding: 20px 10px;
+
+    @media all and (max-width:1000px) {
+        width: 450px;
+        margin-bottom: 20px;
+    }
+
+    @media all and (max-width:520px) {
+        width: 99%;
+        padding: 20px 0px;
+    }
 `
 const BasketWrapper = styled.div`
-    width: 48%; 
+    width: 47%; 
     height: 300px;
     border: 2px solid black;
     text-align: center;
-    padding: 20px 0px;
+    padding: 20px 10px;
     overflow: hidden;
+    
+    @media all and (max-width:1000px) {
+        width: 450px;
+    }
+    @media all and (max-width:520px) {
+        width: 99%;
+        padding: 20px 0px;
+    }
 `
 const ItemTitle = styled.div`
     width: 100%;
