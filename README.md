@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# 마켓보로 과제 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+해당과제는 React.js로 구현했습니다. Yarn을 사용해 구동하였고 React라이브러리로는 스타일은 styled-component, 상태관리 라이브러리는 Redux를 이용해 구현하였습니다.
 
-## Available Scripts
+## 실행방법
 
-In the project directory, you can run:
+1. yarn install 또는 npm install을 합니다.
+2. yarn start 또는 npm start을 합니다.
 
-### `npm start`
+## 개발 설명
+* 개발 필수요건
+1. React.js로 구현했습니다.
+    - 상태관리 라이브러리로는 Redux를 이용했습니다.
+2. 왼쪽 상품정보는 items.json파일을 비동기방식으로 가져와 3열로 표기 했습니다.
+3. 상품을 클릭했을시 오늘쪽 주문문록에 상품이 1개씩 증가하며 추가가 됩니다.
+4. 왼쪽 상품정보가 해당 박스를 넘게 되었을때 스크롤형태로 나타납니다.
+5. 오른쪽 주문목록을 보여주고 하단의 수량과 총 금액을 나타냅니다.
+6. 똑같은 상품을 추가 주문시 주문목록의 있는지 없는지 판단에 증가 또는 추가를 합니다.
+7. X버튼을 누르면 목록에서 삭제 됩니다.
+8. 주문목록은 실시간으로 반영됩니다.
+9. 주문목록이 넘칠시 스크롤이 되게 합니다.
+10. 모바일에서 지원 되게끔 반응형으로 구현했습니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
